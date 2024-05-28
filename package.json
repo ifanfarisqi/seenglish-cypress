@@ -1,0 +1,20 @@
+{
+  "name": "seenglish-cypress",
+  "version": "1.0.0",
+  "description": "seenglish-cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Ifan Muhammad",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.3.3"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.10"
+  }
+}
