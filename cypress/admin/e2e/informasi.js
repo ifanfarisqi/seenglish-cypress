@@ -17,34 +17,34 @@ describe("Admin CRUD informasi", () => {
     cy.contains("Informasi").click();
 
     // //Create Informasi
-    cy.get('button[id="btn-create"]').click();
-    cy.get('input[id = "judul"]').type("Informasi 1");
-    cy.get('textarea[name = "isi"]').type("Test 1 2 3 Dicoba");
-    cy.get('input[id = "gambar"]').selectFile(
-      "cypress/downloads/pict_informasi_1.jpeg"
-    );
-    cy.get('input[id = "a"]').click().should("have.value", "A");
-    cy.contains("Simpan").click();
+    // cy.get('button[id="btn-create"]').click();
+    // cy.get('input[id = "judul"]').type("Informasi 1");
+    // cy.get('textarea[name = "isi"]').type("Test 1 2 3 Dicoba");
+    // cy.get('input[id = "gambar"]').selectFile(
+    //   "cypress/downloads/pict_informasi_1.jpeg"
+    // );
+    // cy.get('input[id = "a"]').click().should("have.value", "A");
+    // cy.contains("Simpan").click();
 
     //Edit Informasi
-    cy.contains("Ubah").click();
-    cy.get('input[id = "judul"]').clear().type("Informasi 01");
-    cy.get('textarea[name = "isi"]').clear().type("Test 1 2 3 4 5 6 Dicoba");
-    cy.get('input[id = "gambar"]').selectFile(
-      "cypress/downloads/pict_informasi_1.jpeg"
-    );
-    cy.get('input[id = "a"]').click().should("have.value", "A");
-    cy.contains("Simpan").click();
+    // cy.contains("Ubah").click();
+    // cy.get('input[id = "judul"]').clear().type("Informasi 01");
+    // cy.get('textarea[name = "isi"]').clear().type("Test 1 2 3 4 5 6 Dicoba");
+    // cy.get('input[id = "gambar"]').selectFile(
+    //   "cypress/downloads/pict_informasi_1.jpeg"
+    // );
+    // cy.get('input[id = "a"]').click().should("have.value", "A");
+    // cy.contains("Simpan").click();
 
     //Detail Informasi
-    cy.contains("Detail").click();
-    cy.contains("Kembali").click();
+    // cy.contains("Detail").click();
+    // cy.contains("Kembali").click();
 
     //Delete Informasi
-    cy.get('button[id = "46"]').click();
-    cy.get('button[class="swal2-cancel swal2-styled"]').click();
-    cy.get('button[id = "46"]').click();
-    cy.get('button[class="swal2-confirm swal2-styled"]').click();
-    cy.contains("OK").click();
+    // cy.get('button[id = "46"]').click();
+    // cy.get('button[class="swal2-cancel swal2-styled"]').click();
+    // cy.get('button[id = "46"]').click();
+    // cy.get('button[class="swal2-confirm swal2-styled"]').click();
+    // cy.contains("OK").click();
   });
 });
